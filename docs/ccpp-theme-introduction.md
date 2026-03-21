@@ -1,50 +1,47 @@
-# C/C++ PRO Theme 介绍
+# C/C++ Pro Theme Introduction
 
----
+**A VS Code theme specifically designed for C/C++ programmers**
 
-**一个专门为 C/C++ 程序员设计的 VSCode 主题**
+## Highlights
 
----
+C/C++ Pro Theme leverages LSP-parsed syntax tokens to provide enhanced highlighting for more code elements.
 
-## 有什么亮点
+The theme fully supports both major C/C++ Language Server implementations:
+- **Microsoft C/C++ Extension**
+- **clangd Extension**
 
-C/C++ Pro Theme 可以基于 LSP 解析的语法 token 对源文件里更多的元素进行高亮显示。 
+Powered by advanced LSP syntax analysis, C/C++ Pro Theme provides the following enhanced highlighting features:
 
-目前 VSCode 主流的 C/C++ LSP 有微软 C/C++插件和 clangd 插件，C/C++ Pro Theme 对两者都有相对完整的支持。
+- ✅ Global variables and static global variables
+- ✅ `const` attribute visualization
+- ✅ Differentiation between `==` vs `=`, `&&` vs `&` operators
+- ✅ Static functions vs regular functions
+- ✅ Clear distinction between parameters, local variables, and properties
+- ✅ Enum values and macros
 
-借助于 LSP 强大的语法分析能力，C/C++ Pro Theme 提供以下额外的高亮显示：
+And many more visual enhancements waiting to be discovered!
 
-- 支持全局变量、静态全局变量的高亮
-- 显示变量 const 属性
-- 区分显示 == 和 =、&& 和 &等逻辑运算发
-- 区分显示普通函数和静态函数
-- 区分显示 parameter、local variable 及 property
-- 区分实现 enum 值和 macro
+## Why This Theme Exists
 
-更多视觉强化细节等待大家使用后解锁。
+This project was born from a desire to improve the C/C++ development experience in VS Code. The creator also developed other developer tools like [comNG](https://gitee.com/xenkuo/comNG), a serial port assistant utility.
 
-## 为什么做这个主题
+## Installation
 
-没事时就想搞点这些小工具。我还做了一个串口助手 [comNG](https://gitee.com/xenkuo/comNG)， 大家也可以试试。
+Install directly from the VS Code Extensions Marketplace:
 
-下面给各位看官炫几张截图：
+1. Open VS Code
+2. Press `Ctrl+Shift+X` to open Extensions view
+3. Search for **"C/C++ Pro Theme"**
+4. Click **Install**
 
-> C/C++ Pro Theme 配合 MS C/C++插件
+Alternatively, download the `.vsix` file from [GitHub Releases](https://github.com/xenkuo/ccpro_theme/releases) and install manually.
 
-![](image/README_2023-06-22-21-02-03.png)
+## Get Involved
 
-> C/C++ Pro Theme 配合 clangd 插件
+We welcome contributions from the community!
 
-![](image/README_2023-06-22-21-03-10.png)
+- **Repository**: [ccpro_theme on GitHub](https://github.com/xenkuo/ccpro_theme)
+- **Issues & Feature Requests**: Submit via GitHub Issues
+- **Pull Requests**: Always welcome!
 
-**C/C++ Pro Theme** 系统设计图：
-
-![](image/The%20C%202023-04-29%2021.23.52.excalidraw.png)
-
-## 怎么使用
-
-VSCode 插件市场直接搜索 C/C++ Pro Theme 安装即可。
-
-## 大家一起参与
-
-仓库地址： [CCPRO_theme](https://github.com/xenkuo/ccpro_theme)，欢迎 PR。
+Join us in making C/C++ development in VS Code even better!

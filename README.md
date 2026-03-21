@@ -1,49 +1,117 @@
-# README
+# C/C++ Pro Theme for VS Code
 
----
+[![GitHub Repository](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/xenkuo/ccpp_theme)
+[![License](https://img.shields.io/github/license/xenkuo/ccpp_theme)](LICENSE)
 
-**A theme dedicated for C/C++ programer.**
+**A professional theme dedicated to C/C++ developers**, leveraging VS Code's semantic highlighting engine to provide fluent, systematic syntax highlighting.
 
----
+![Theme Preview](image/icon.png)
 
-**C/C++ Pro Theme** utilizes the power of VSCode semantic highlighting engine to recognize more token types and provide a fluent, systematic C/C++ syntax highlighting experience.
+## Features
 
-> The dark theme bases on [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula), the light theme bases on [Bluloco Light](https://marketplace.visualstudio.com/items?itemName=uloco.theme-bluloco-light), so supposedly it should work with other language as well.
+🎯 **Enhanced Semantic Highlighting**  
+Utilizes VS Code's powerful semantic highlighting engine to recognize more token types and provide accurate syntax highlighting for C/C++ code.
 
-**C/C++ Pro Theme** recognizes more C/C++ syntax symbols and renders them in a opinionated but thoughtful way. Below are some screenshots.
+🎨 **Dual Theme Support**  
+- **Dark Theme**: Based on [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+- **Light Theme**: Based on [Bluloco Light](https://marketplace.visualstudio.com/items?itemName=uloco.theme-bluloco-light)
 
-> C/C++ Pro Theme with MS C/C++ extension
+⚡ **Multi-LSP Compatibility**  
+Supports both **MS C/C++** and **clangd** Language Server Protocols, providing consistent rendering results across different toolchains.
 
-![](image/README_2023-06-22-21-02-03.png)
+🔧 **Opinionated Design**  
+Recognizes extensive C/C++ syntax symbols and renders them thoughtfully with built-in design principles.
 
-> C/C++ Pro Theme with clangd extension
+### Enhanced Semantic Highlighting Demo
 
-![](image/README_2023-06-22-21-03-10.png)
+![C/C++ Pro Theme Screenshot](image/sample.png)
 
-**C/C++ Pro Theme** supports both MS C/C++ and clangd LSP, and provides a consistent(similar but not exactly same) rendering result. If you want to learn the token set that **C/C++ Pro Theme** supports, please refer to below image:
+*The example above showcases how C/C++ Pro Theme highlights different C++ constructs:*
+- 🟦 **Global/Static variables** - distinct colors for different scopes
+- 🟩 **Operators** - clear distinction between `=`, `==`, `&&`, `&`
+- 🟨 **Class members** - properties, methods, and static members
+- 🟪 **Templates** - type parameters and specializations
+- 🟧 **Smart pointers** - modern C++ features
+- ⬛ **Enums and macros** - enhanced visibility
 
-![](image/The%20C%202023-04-29%2021.23.52.excalidraw.png)
+**Want to see it in action?** Open [`sample/screenshot-sample.cpp`](sample/screenshot-sample.cpp) in your VS Code with C/C++ Pro Theme activated!
 
-Beside of recognizing of so many tokens, **C/C++ Theme** tries to have kind of design logic. It has these built-in principles to achieve the goal:
+## Design Principles
 
-1. Priority Design
-   1. Scope has highest priority
-   2. Then type
-   3. Then readonly, or declaration, or other attributions
-2. Consistency Design
-   1. Consistency between similar concepts, e.g., static variable shares similar UI with global variable
-   2. Consistency between C and C++
-   3. Consistency between MS C/C++ and clangd. **C/C++ Theme** leverages the two LSP to get semantic tokens, they generates different semantic token set and names, **C/C++ Theme** aggregate them into a uniform rendering.
-   4. Consistency with the based theme [Dracula Official](https://github.com/dracula/visual-studio-code.git). All the colors **C/C++ Theme** used are from the based theme.
-3. Style Design
-   1. `underline` is a very strong style, it was limited for kind of special tokens. e.g. static variable or static functions.
+### 1. Priority Design
+- **Scope** has highest priority
+- **Type** comes second
+- **Attributes** (readonly, declaration, etc.) follow
 
-## Q&A
+### 2. Consistency Design
+- ✅ Similar concepts share visual similarities (e.g., static variables resemble global variables)
+- ✅ Consistent experience between C and C++
+- ✅ Unified rendering across MS C/C++ and clangd LSPs
+- ✅ Maintains harmony with base [Dracula Official](https://github.com/dracula/visual-studio-code.git) theme colors
 
-1. Differentiation between MS C++ extension and clangd extension.
-    > Both are the top end C/C++ LSPs, clangd offers more precise token types than MS C++, especially to `variable` and `function` types, and it's fast. MS C/C++ offers a more appropriate token set and better compatibility(only my personal experience based on daily usage).
+### 3. Style Guidelines
+- Uses `underline` style sparingly for special tokens (e.g., static variables/functions)
+- Thoughtful color choices from established theme palettes
+
+## FAQ
+
+### Q: What's the difference between MS C++ and clangd extensions?
+
+Both are excellent C/C++ Language Server implementations:
+
+- **clangd**: Offers more precise token types (especially for `variable` and `function`), generally faster performance
+- **MS C/C++**: Provides more appropriate token sets and better compatibility based on daily usage experience
+
+The theme aggregates semantic tokens from both LSPs into a uniform rendering, so you can use either or switch between them seamlessly.
+
+## Installation
+
+1. Download the `.vsix` file from the [Releases](https://github.com/xenkuo/ccpp_theme/releases)
+2. Open VS Code
+3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS)
+4. Select **"Extensions: Install from VSIX..."**
+5. Choose the downloaded `.vsix` file
+6. Activate the theme: `Ctrl+K Ctrl+T` → Select **"C/C++ Pro Theme"** or **"C/C++ Pro Theme Light"**
+
+## Usage
+
+After installation, activate the theme:
+- **Dark Theme**: Press `Ctrl+K Ctrl+T` → Select **"C/C++ Pro Theme"**
+- **Light Theme**: Press `Ctrl+K Ctrl+T` → Select **"C/C++ Pro Theme Light"**
+
+For best results, ensure semantic highlighting is enabled in VS Code settings.
 
 ## Development
 
-Please refer to [Here](./Develop.md).
+Want to contribute or customize the theme? Check out our [Development Guide](./docs/Develop.md) for:
+- Quick start instructions
+- Build system overview
+- Packaging guidelines
+- Development workflow
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/xenkuo/ccpro_theme.git
+
+# Navigate to project directory
+cd ccpro_theme
+
+# Build the theme
+npm run build
+
+# Test in VS Code
+# Press F5 to launch Extension Development Host
+```
+
+## License
+
+This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
+
+## Acknowledgments
+
+- Dark theme based on [Dracula Official](https://github.com/dracula/visual-studio-code.git)
+- Light theme based on [Bluloco Light](https://github.com/uloco/bluloco)
+- Built with ❤️ for the C/C++ community
  
