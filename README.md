@@ -1,0 +1,49 @@
+# README
+
+---
+
+**A theme dedicated for C/C++ programer.**
+
+---
+
+**C/C++ Pro Theme** utilizes the power of VSCode semantic highlighting engine to recognize more token types and provide a fluent, systematic C/C++ syntax highlighting experience.
+
+> The dark theme bases on [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula), the light theme bases on [Bluloco Light](https://marketplace.visualstudio.com/items?itemName=uloco.theme-bluloco-light), so supposedly it should work with other language as well.
+
+**C/C++ Pro Theme** recognizes more C/C++ syntax symbols and renders them in a opinionated but thoughtful way. Below are some screenshots.
+
+> C/C++ Pro Theme with MS C/C++ extension
+
+![](image/README_2023-06-22-21-02-03.png)
+
+> C/C++ Pro Theme with clangd extension
+
+![](image/README_2023-06-22-21-03-10.png)
+
+**C/C++ Pro Theme** supports both MS C/C++ and clangd LSP, and provides a consistent(similar but not exactly same) rendering result. If you want to learn the token set that **C/C++ Pro Theme** supports, please refer to below image:
+
+![](image/The%20C%202023-04-29%2021.23.52.excalidraw.png)
+
+Beside of recognizing of so many tokens, **C/C++ Theme** tries to have kind of design logic. It has these built-in principles to achieve the goal:
+
+1. Priority Design
+   1. Scope has highest priority
+   2. Then type
+   3. Then readonly, or declaration, or other attributions
+2. Consistency Design
+   1. Consistency between similar concepts, e.g., static variable shares similar UI with global variable
+   2. Consistency between C and C++
+   3. Consistency between MS C/C++ and clangd. **C/C++ Theme** leverages the two LSP to get semantic tokens, they generates different semantic token set and names, **C/C++ Theme** aggregate them into a uniform rendering.
+   4. Consistency with the based theme [Dracula Official](https://github.com/dracula/visual-studio-code.git). All the colors **C/C++ Theme** used are from the based theme.
+3. Style Design
+   1. `underline` is a very strong style, it was limited for kind of special tokens. e.g. static variable or static functions.
+
+## Q&A
+
+1. Differentiation between MS C++ extension and clangd extension.
+    > Both are the top end C/C++ LSPs, clangd offers more precise token types than MS C++, especially to `variable` and `function` types, and it's fast. MS C/C++ offers a more appropriate token set and better compatibility(only my personal experience based on daily usage).
+
+## Development
+
+Please refer to [Here](./Develop.md).
+ 

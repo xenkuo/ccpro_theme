@@ -1,0 +1,50 @@
+{
+    "name": "ccpp-pro-theme",
+    "displayName": "C/C++ Pro Theme",
+    "description": "The language C/C++ focused theme, powered by MS C/C++ and clangd semantic token engine.",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "maintainers": [
+        "Xen Kuo <xenkuo@gmail.com>"
+    ],
+    "publisher": "Xen",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xenkuo/ccpp_theme.git"
+    },
+    "keywords": [
+        "c/c++",
+        "dracula-2.24.2",
+        "bluloco_light-3.7.3",
+        "dark",
+        "theme",
+        "color-theme "
+    ],
+    "categories": [
+        "Themes"
+    ],
+    "icon": "image/icon.png",
+    "scripts": {
+        "build": "node src/merge-themes.js",
+        "package": "vsce package"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "C/C++ Pro Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/ccpro_theme.json"
+            },
+            {
+                "label": "C/C++ Pro Theme Light",
+                "uiTheme": "vs",
+                "path": "./themes/ccpro_theme_light.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^3.7.1"
+    }
+}
