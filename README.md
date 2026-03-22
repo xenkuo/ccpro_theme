@@ -5,7 +5,7 @@
 
 **A professional theme dedicated to C/C++ developers**, leveraging VS Code's semantic highlighting engine to provide fluent, systematic syntax highlighting.
 
-![Theme Preview](image/icon.png)
+![](image/icon.png)
 
 ## Features
 
@@ -22,9 +22,11 @@ Supports both **MS C/C++** and **clangd** Language Server Protocols, providing c
 🔧 **Opinionated Design**  
 Recognizes extensive C/C++ syntax symbols and renders them thoughtfully with built-in design principles.
 
+## Screenshots
+
 ### Enhanced Semantic Highlighting Demo
 
-![C/C++ Pro Theme Screenshot](image/sample.png)
+![](image/sample.png)
 
 *The example above showcases how C/C++ Pro Theme highlights different C++ constructs:*
 - 🟦 **Global/Static variables** - distinct colors for different scopes
