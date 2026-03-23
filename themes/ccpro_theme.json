@@ -1301,7 +1301,7 @@
                 "entity.name.namespace"
             ],
             "settings": {
-                "foreground": "#F5F5EF",
+                "foreground": "#8BE9FD",
                 "fontStyle": "bold"
             }
         },
@@ -1379,7 +1379,7 @@
         },
         "enumMember": {
             "note": "both clangd and ms c/c++",
-            "foreground": "#FF79C6",
+            "foreground": "#8BE9FD",
             "fontStyle": "bold, italic"
         },
         "label": {

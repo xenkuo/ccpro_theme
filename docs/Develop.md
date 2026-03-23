@@ -35,8 +35,8 @@ nvm list
 nvm use 20
 
 # Package the extension
-npm install --save-dev @vscode/vsce
-npx vsce package
+npm install
+npm run package
 ```
 
 This will create a `.vsix` file in the project root.
@@ -77,26 +77,16 @@ ccpro_theme/
 └── package.json                       # Extension manifest
 ```
 
-### Build Commands
-
-```bash
-# No build step needed - theme files are used directly
-
-# This merges base + customizations → themes/ccpro_theme.json
-```
-
 ### Development Workflow
 
-1. **Modify** your customizations in `src/customizations.json` or `src/semantic-customizations.json`
+1. **Setup Environment** install `vsce` with `npm install`
 2. **Build**: `npm run build`
 3. **Test**: Reload VS Code window to see changes
 4. **Repeat** until satisfied
 
-### Merge Strategy
+Or:
 
-**Token Colors: Scope-Based Override**
-- When customization scopes overlap with base tokens, customization completely replaces base
-- Non-overlapping tokens from both files are preserved
+1. Press `F5` to launch the debug mode.
 
 ### Theme Maintenance
 
