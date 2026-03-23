@@ -2,7 +2,7 @@
     "name": "ccpp-pro-theme",
     "displayName": "C/C++ Pro Theme",
     "description": "The language C/C++ focused theme, powered by MS C/C++ and clangd semantic token engine.",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -46,5 +46,11 @@
     },
     "devDependencies": {
         "@vscode/vsce": "^3.7.1"
-    }
+    },
+    "files": [
+        "themes/**/*",
+        "image/**/*",
+        "README.md",
+        "LICENSE"
+    ]
 }
