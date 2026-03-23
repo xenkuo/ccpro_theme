@@ -1,8 +1,8 @@
 {
-    "name": "ccpp-pro-theme",
+    "name": "ccpro-theme",
     "displayName": "C/C++ Pro Theme",
     "description": "The language C/C++ focused theme, powered by MS C/C++ and clangd semantic token engine.",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -12,7 +12,7 @@
     "publisher": "Xen",
     "repository": {
         "type": "git",
-        "url": "https://github.com/xenkuo/ccpp_theme.git"
+        "url": "https://github.com/xenkuo/ccpro_theme.git"
     },
     "keywords": [
         "c/c++",
@@ -20,7 +20,7 @@
         "bluloco_light-3.7.3",
         "dark",
         "theme",
-        "color-theme "
+        "color-theme"
     ],
     "categories": [
         "Themes"

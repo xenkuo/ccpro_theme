@@ -1,7 +1,7 @@
 # C/C++ Pro Theme for VS Code
 
-[![GitHub Repository](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/xenkuo/ccpp_theme)
-[![License](https://img.shields.io/github/license/xenkuo/ccpp_theme)](LICENSE)
+[![GitHub Repository](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/xenkuo/ccpro_theme)
+[![License](https://img.shields.io/github/license/xenkuo/ccpro_theme)](LICENSE)
 
 **A professional theme dedicated to C/C++ developers**, leveraging VS Code's semantic highlighting engine to provide fluent, systematic syntax highlighting.
 
@@ -68,7 +68,7 @@ The theme aggregates semantic tokens from both LSPs into a uniform rendering, so
 
 ## Installation
 
-1. Download the `.vsix` file from the [Releases](https://github.com/xenkuo/ccpp_theme/releases)
+1. Download the `.vsix` file from the [Releases](https://github.com/xenkuo/ccpro_theme/releases)
 2. Open VS Code
 3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS)
 4. Select **"Extensions: Install from VSIX..."**

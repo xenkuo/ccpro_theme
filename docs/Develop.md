@@ -74,7 +74,7 @@ The theme uses a modular approach with separated customization files:
    - Your C/C++ specific semantic token customizations
 
 **Build Output:**
-- **Final Theme** - `themes/ccpp_theme.json` (GENERATED - do not edit manually)
+- **Final Theme** - `themes/ccpro_theme.json` (GENERATED - do not edit manually)
 
 **Build Script:**
 - **Merge Script** - `src/merge-themes.js`
@@ -82,10 +82,10 @@ The theme uses a modular approach with separated customization files:
 ### File Structure
 
 ```
-ccpp_theme/
+ccpro_theme/
 ├── themes/
-│   ├── ccpp_theme.json               # ⚠️ GENERATED
-│   └── ccpp_theme_light.json         # Light theme
+│   ├── ccpro_theme.json               # ⚠️ GENERATED
+│   └── ccpro_theme_light.json         # Light theme
 ├── src/
 │   ├── dracula-base.json             # Base Dracula (v2.24.2)
 │   ├── merge-themes.js               # Build script
@@ -101,7 +101,7 @@ ccpp_theme/
 # Build the theme
 npm run build
 
-# This merges base + customizations → themes/ccpp_theme.json
+# This merges base + customizations → themes/ccpro_theme.json
 ```
 
 ### Development Workflow
@@ -148,7 +148,7 @@ npm run build
 - Some scopes might be semantic, not textmate
 - Use developer tools to inspect token scopes
 
-> ⚠️ **Never edit `themes/ccpp_theme.json` directly** - it will be overwritten on next build. Always edit the customization files instead.
+> ⚠️ **Never edit `themes/ccpro_theme.json` directly** - it will be overwritten on next build. Always edit the customization files instead.
 
 ---
 
