@@ -1,8 +1,5 @@
 node_modules
 *.vsix
 
-# Generated theme file (can be regenerated with npm run build)
-# themes/ccpro_theme.json
-
 # Temporary documentation files
 docs/temporary/

@@ -100,11 +100,8 @@ git clone https://github.com/xenkuo/ccpro_theme.git
 # Navigate to project directory
 cd ccpro_theme
 
-# Build the theme
-npm run build
-
-# Test in VS Code
-# Press F5 to launch Extension Development Host
+# Package the theme
+npm run package
 ```
 
 ## License

@@ -2,7 +2,7 @@
     "name": "ccpro-theme",
     "displayName": "C/C++ Pro Theme",
     "description": "The language C/C++ focused theme, powered by MS C/C++ and clangd semantic token engine.",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -27,7 +27,7 @@
     ],
     "icon": "image/icon.png",
     "scripts": {
-        "build": "node src/merge-themes.js",
+        "build": "echo No build needed - using ccpro_theme.json directly",
         "package": "vsce package"
     },
     "contributes": {
@@ -46,11 +46,5 @@
     },
     "devDependencies": {
         "@vscode/vsce": "^3.7.1"
-    },
-    "files": [
-        "themes/**/*",
-        "image/**/*",
-        "README.md",
-        "LICENSE"
-    ]
+    }
 }
